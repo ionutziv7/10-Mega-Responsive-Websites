@@ -281,7 +281,7 @@ html {
 
 /* End of Section 1*/
 
-/* Section 2*/
+/* Section 2 */
 .section-2 {
   width: 100%;
   height: 100vh;
@@ -293,8 +293,8 @@ html {
 }
 
 .section-heading {
-  font-family: "Oswald", sans-serif;
   font-size: 10rem;
+  font-family: "Oswald", sans-serif;
   font-weight: 300;
   color: #ddd;
   margin-right: 4rem;
@@ -312,7 +312,12 @@ html {
   position: absolute;
   top: 5rem;
   right: 15rem;
-  box-shadow: 3rem 3rem 3rem rgba(0, 0, 0, 0.7);
+  box-shadow: 3rem 3rem 6rem rgba(0, 0, 0, 0.7);
+  overflow: hidden;
+}
+
+.video-wrapper:hover .controls {
+  transform: translateY(0);
 }
 
 .video {
@@ -320,6 +325,7 @@ html {
   height: 100%;
   object-fit: cover;
   opacity: 0.3;
+  transition: opacity 0.3s;
 }
 
 .controls {
@@ -327,11 +333,13 @@ html {
   position: absolute;
   bottom: 0;
   background-color: rgba(0, 0, 0, 0.7);
+  transform: translateY(calc(100% - 0.4rem));
+  transition: transform 0.4s;
 }
 
 .video-bar-wrapper {
   width: 100%;
-  height: 0.7s;
+  height: 0.7rem;
   background-color: #000;
   position: absolute;
   top: 0;
@@ -340,8 +348,9 @@ html {
 
 .video-bar {
   height: 100%;
-  width: 20%;
+  width: 0;
   background-color: #d30819;
+  transition: width 0.2s linear;
 }
 
 .buttons {
@@ -355,6 +364,8 @@ html {
 }
 
 .buttons i {
+  width: 3rem;
+  height: 3rem;
   font-size: 2.8rem;
   color: #fff;
 }
@@ -365,6 +376,7 @@ html {
   bottom: 8rem;
   right: 15rem;
   font-size: 2rem;
+  line-height: 1.5;
   color: #ddd;
   border-top: 0.3rem double #aaa;
   border-bottom: 0.3rem double #aaa;
@@ -375,17 +387,19 @@ html {
   align-items: center;
   text-align: justify;
   text-shadow: 1rem 1rem 2rem rgba(0, 0, 0, 0.7);
-  line-height: 1.5;
 }
 
 .fa-quote-left {
   align-self: flex-start;
   font-size: 5rem;
+  color: #bbb;
   margin-bottom: 2rem;
 }
 
 .fa-quote-right {
   align-self: flex-end;
   font-size: 5rem;
+  color: #bbb;
 }
-/* End of Section 2*/
+
+/* End of Section 2 */
