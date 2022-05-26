@@ -24,6 +24,14 @@
 				<section class="section-1">
 					<div class="navbar-wrapper">
 						<nav class="navbar">
+							<div class="menu">
+								<div class="menu-icon">
+									<div class="line line-1"></div>
+									<div class="line line-2"></div>
+									<div class="line line-3"></div>
+								</div>
+								<span>Menu</span>
+							</div>
 							<div class="navbar-logo logo">
 								<span class="p-1">P</span>
 								<span class="p-2">P</span>
@@ -35,7 +43,12 @@
 										>Personal
 										<i class="fas fa-chevron-down"></i>
 									</a>
-									<ul class="nav-dropdown">
+									<ul class="nav-dropdown nav-dropdown-personal">
+										<li class="nav-dropdown-item dropdown-heading">
+											<a href="#">
+												<i class="fas fa-chevron-down"></i>Personal
+											</a>
+										</li>
 										<li class="nav-dropdown-item">
 											<a href="#" class="nav-dropdown-link-1"
 												>How PayPal works</a
@@ -71,7 +84,17 @@
 										>Business
 										<i class="fas fa-chevron-down"></i>
 									</a>
-									<ul class="nav-dropdown">
+									<ul class="nav-dropdown nav-dropdown-business">
+										<li class="nav-dropdown-item dropdown-heading">
+											<a href="#">
+												<i class="fas fa-chevron-down"></i>Business
+											</a>
+										</li>
+										<li class="nav-dropdown dropdown-heading">
+											<a href="#">
+												<i class="fas fa-chevron-down"></i>Personal
+											</a>
+										</li>
 										<li class="nav-dropdown-item">
 											<a href="#" class="nav-dropdown-link-1"
 												>All business solutions</a
@@ -125,8 +148,8 @@
 					</div>
 				</section>
 				<!-- End of Section 1 -->
-				<!-- Section 2 -->
 
+				<!-- Section 2 -->
 				<section class="section-2">
 					<h1 class="section-2-heading">
 						PayPal is for everyone who pays or gets paid
@@ -320,7 +343,11 @@
 						<input type="button" class="form-login-btn" value="Log In" />
 						<a href="#" class="form-login-link">Having trouble logging in?</a>
 						<span>or</span>
-						<input type="button" class="form-signup-btn signup" value="Sign Up" />
+						<input
+							type="button"
+							class="form-signup-btn signup"
+							value="Sign Up"
+						/>
 					</form>
 				</div>
 			</div>
